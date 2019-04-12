@@ -11,6 +11,7 @@
     <groupId>com.loodeer</groupId>
     <artifactId>normandy</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>normandy</name>
     <description>Demo project for Spring Boot</description>
 
@@ -19,6 +20,7 @@
         <module>normandy-service-facade</module>
         <module>normandy-user</module>
         <module>normandy-redis</module>
+        <module>normandy-trade</module>
     </modules>
 
     <properties>
@@ -49,12 +51,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.loodeer</groupId>
-            <artifactId>normandy-service-facade</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
@@ -71,15 +67,12 @@
             <version>1.2.17</version>
             <scope>compile</scope>
         </dependency>
-    </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+        <dependency>
+            <groupId>com.loodeer</groupId>
+            <artifactId>normandy-service-facade</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+    </dependencies>
 
 </project>
